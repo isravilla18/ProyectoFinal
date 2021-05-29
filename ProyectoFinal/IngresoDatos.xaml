@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.IngresoDatos">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+            <BoxView HeightRequest="10"/>
+            <Image HorizontalOptions="Center" WidthRequest="1000" Source="farmacia.jpg"/>
+            <Label TextColor="Blue" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Title" >Ingreso de Datos</Label>
+            <Frame BackgroundColor="Blue" HasShadow="False">
+                <StackLayout Orientation="Vertical" Spacing="5">
+                    <Entry x:Name="txtNombre" Text="{Binding Email}" Placeholder="Nombre Y Apellido"   
+                           PlaceholderColor="White" HeightRequest="40"   
+                            
+                           TextColor="White"/>
+                    <Entry x:Name="txtCedula" Text="{Binding Password}" Placeholder="Cedula"   
+                           PlaceholderColor="White" HeightRequest="40"   
+                            
+                           TextColor="White"/>
+                    <Entry x:Name="txtCelular" Text="{Binding Password}" Placeholder="Celular"   
+                           PlaceholderColor="White" HeightRequest="40"   
+                           
+                           TextColor="White"/>
+                </StackLayout>
+            </Frame>
+            <Button Command="{Binding SubmitCommand}" Text="Siguiente >>" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="Red"  Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

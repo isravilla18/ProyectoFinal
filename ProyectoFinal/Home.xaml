@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Home">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+            <BoxView HeightRequest="10"/>
+         
+            <Image HorizontalOptions="Center" WidthRequest="1000" Source="farmacia.jpg"/>
+           
+            <Label TextColor="Blue" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Title" >Escoge tus productos</Label>
+            <Frame BackgroundColor="White" HasShadow="False">
+                <StackLayout Orientation="Vertical" Spacing="10">
+                    <ListView x:Name="ListaElementos1">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell  Text="{Binding Nombre}" Detail="{Binding Descripcion}" TextColor="Blue" />
+                            </DataTemplate>
+
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                    <Label x:Name="lblnombre" />
+                    <Label x:Name="lblcedula" />
+                    <Label x:Name="lblcelular"/>
+                </StackLayout>
+            </Frame>
+            
+        </StackLayout>
+    </ContentPage.Content>
+
+
+
+</ContentPage>

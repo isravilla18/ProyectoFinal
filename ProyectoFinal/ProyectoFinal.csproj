@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\netstandard2.0\.NETStandard,Version=v2.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\netstandard2.0\App.xaml.g.cs" />
+    <Compile Include="obj\Debug\netstandard2.0\Home.xaml.g.cs" />
+    <Compile Include="obj\Debug\netstandard2.0\IngresoDatos.xaml.g.cs" />
+    <Compile Include="obj\Debug\netstandard2.0\MainPage.xaml.g.cs" />
+    <Compile Include="obj\Debug\netstandard2.0\ProyectoFinal.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netstandard2.0\Resumen.xaml.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netstandard2.0\ProyectoFinal.deps.json" />
+    <Content Include="obj\Debug\netstandard2.0\ProyectoFinal.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\ProyectoFinal.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netstandard2.0\ProyectoFinal.dll" />
+    <None Include="bin\Debug\netstandard2.0\ProyectoFinal.pdb" />
+    <None Include="bin\Debug\netstandard2.0\ref\ProyectoFinal.dll" />
+    <None Include="obj\Debug\netstandard2.0\ProyectoFinal.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netstandard2.0\ProyectoFinal.assets.cache" />
+    <None Include="obj\Debug\netstandard2.0\ProyectoFinal.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netstandard2.0\ProyectoFinal.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netstandard2.0\ProyectoFinal.dll" />
+    <None Include="obj\Debug\netstandard2.0\ProyectoFinal.pdb" />
+    <None Include="obj\Debug\netstandard2.0\ref\ProyectoFinal.dll" />
+    <None Include="obj\Debug\netstandard2.0\XamlC.stamp" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\ProyectoFinal.csproj.nuget.g.props" />
+    <None Include="obj\ProyectoFinal.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Home.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="IngresoDatos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resumen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
